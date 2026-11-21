@@ -1,0 +1,61 @@
+{
+  "name": "magpie-agent-trae-intl",
+  "version": "0.1.0",
+  "description": "Use Magpie models in Trae (International) on Windows, with native catalog synchronization and reversible configuration",
+  "type": "module",
+  "main": "./index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/not502/magpie-agent-trae-intl.git"
+  },
+  "homepage": "https://github.com/not502/magpie-agent-trae-intl#readme",
+  "bugs": {
+    "url": "https://github.com/not502/magpie-agent-trae-intl/issues"
+  },
+  "files": [
+    "trae.agent.js",
+    "index.mjs",
+    "cli.mjs",
+    "restore.mjs",
+    "src",
+    "assets",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "THIRD_PARTY.md",
+    "ASSET_NOTICE.md"
+  ],
+  "bin": {
+    "magpie-trae-intl": "./cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "check": "node scripts/check-syntax.mjs",
+    "privacy": "node scripts/privacy-check.mjs",
+    "pack:check": "node scripts/pack-check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "magpie": {
+    "agent": "./trae.agent.js",
+    "name": "Trae (International)",
+    "summary": {
+      "en": "Use Magpie models in Trae (International): registers each Magpie model as a local custom model and proxies chat through a loopback bridge.",
+      "zh": "在 Trae 国际版中使用 Magpie 模型：把 Magpie 模型注册为本地自定义模型，并通过回环桥转发对话请求。"
+    },
+    "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMy42OTIiIGZpbGw9IiMxQTFCMUQiLz48cGF0aCBkPSJNMTMuMjM1IDUuODI5VjQuMzMySDIuNzU4djUuOTg3aDEuNDk2djEuNDk2aDguOTgxVjUuODI4Wm0tMS40OTcgNC40OUg0LjI1NFY1LjgzaDcuNDg0djQuNDlaIiBmaWxsPSIjMzJGMDhDIi8+PHBhdGggZD0iTTYuOTM3IDYuOTkzIDUuODggOC4wNTEgNi45MzcgOS4xMSA3Ljk5NSA4LjA1IDYuOTM3IDYuOTkzWk05LjkzMSA2Ljk5MiA4Ljg3MyA4LjA1IDkuOTMxIDkuMTEgMTAuOTkgOC4wNSA5LjkzIDYuOTkyWiIgZmlsbD0iIzMyRjA4QyIvPjwvc3ZnPg==",
+    "options": {
+      "port": 3499
+    }
+  },
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "magpie-agent",
+    "trae",
+    "trae-international",
+    "windows"
+  ]
+}

@@ -1,0 +1,31 @@
+# Dependencies and build output
+node_modules/
+coverage/
+dist/
+*.tgz
+
+# Tool and reference material: never published, never committed
+.zcode/
+.reference/
+
+# Local run state written by the plugin or by manual testing.
+# The real files live under ~/.config/magpie-trae-intl; this only guards
+# against running the CLI from the repository root with a relative path.
+connection.json
+managed-models.json
+sync-status.json
+client-refresh-status.json
+local-credential.json
+model-sync.lock
+sync-status.json.*.tmp
+*.local.json
+
+# Temporary files and editor/OS noise
+*.tmp
+*.temp
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+desktop.ini
